@@ -23,7 +23,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Kelurahan;
 use App\Models\SuaraGubernur;
 
-class TpsController extends Controller
+class TpsBelumController extends Controller
 {
     public function getTpsBelumByKota()
     {
@@ -132,7 +132,7 @@ class TpsController extends Controller
 
             $data[$key] = [
                 'id_kelurahan' => $i->id,
-                'n_kelurahan' => $i->n_kota,
+                'n_kelurahan' => $i->n_kelurahan,
                 'total_tps' => $total_tps,
                 'total_tps_masuk' => $total_tps_masuk,
                 'total_tps_belum_masuk' => $total_tps_belum_masuk,

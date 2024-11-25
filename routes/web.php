@@ -19,6 +19,12 @@ $router->get('/', function () use ($router) {
     return 'dibuat dengan kasih sayang';
 });
 
-$router->get('get-tps-belum-kota', 'TpsController@getTpsBelumByKota');
-$router->get('get-tps-belum-kecamatan/{id_kota}', 'TpsController@getTpsBelumByKecamatan');
-$router->get('get-tps-belum-kelurahan/{id_kecamatan}', 'TpsController@getTpsBelumByKelurahan');
+// Belum
+$router->get('get-tps-belum-kota', 'TpsBelumController@getTpsBelumByKota');
+$router->get('get-tps-belum-kecamatan/{id_kota}', 'TpsBelumController@getTpsBelumByKecamatan');
+$router->get('get-tps-belum-kelurahan/{id_kecamatan}', 'TpsBelumController@getTpsBelumByKelurahan');
+
+// Sudah
+$router->get('get-tps-sudah-kota', 'TpsSudahController@getTpsSudahByKota');
+$router->get('get-tps-sudah-kecamatan/{id_kota}', 'TpsSudahController@getTpsSudahByKecamatan');
+$router->get('get-tps-sudah-kelurahan/{id_kecamatan}', 'TpsSudahController@getTpsSudahByKelurahan');

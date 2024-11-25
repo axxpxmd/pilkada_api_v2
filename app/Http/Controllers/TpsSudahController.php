@@ -49,7 +49,7 @@ class TpsSudahController extends Controller
             $total_tps_belum_masuk = $total_tps - $total_tps_masuk;
 
             $data[$key] = [
-                'id_kota' => $i->id,
+                'id' => $i->id,
                 'n_kota' => $i->n_kota,
                 'total_tps' => $total_tps,
                 'total_tps_masuk' => $total_tps_masuk,
@@ -90,7 +90,7 @@ class TpsSudahController extends Controller
             $total_tps_belum_masuk = $total_tps - $total_tps_masuk;
 
             $data[$key] = [
-                'id_kecamatan' => $i->id,
+                'id' => $i->id,
                 'n_kecamatan' => $i->n_kecamatan,
                 'total_tps' => $total_tps,
                 'total_tps_masuk' => $total_tps_masuk,
@@ -131,7 +131,7 @@ class TpsSudahController extends Controller
             $total_tps_belum_masuk = $total_tps - $total_tps_masuk;
 
             $data[$key] = [
-                'id_kelurahan' => $i->id,
+                'id' => $i->id,
                 'n_kelurahan' => $i->n_kelurahan,
                 'total_tps' => $total_tps,
                 'total_tps_masuk' => $total_tps_masuk,
